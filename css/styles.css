@@ -24,7 +24,7 @@ footer {
   font-size: 0.95rem;
 }
 
-
+/* Mejor contraste para el navbar y footer */
 .navbar, footer {
   background-color: #003366 !important;
 }
@@ -64,8 +64,20 @@ footer {
 
 /* Reducir altura del carrusel */
 .carousel-pequeno .carousel-item img {
-  max-height: 300px;
+  max-height: 240px;
   object-fit: cover;
+}
+
+/* Mejorar contraste de texto en carrusel */
+.carousel-caption h5 {
+  color: #212529;
+  text-shadow: none;
+}
+
+/* Texto blanco para nombres de alumnos en testimonios */
+section[aria-labelledby="testimonios"] .blockquote-footer {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
 }
 
 .animate-fade-in {
