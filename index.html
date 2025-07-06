@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Navbar sticky y con sombra -->
+  <!-- Navbar sticky y con sombra, accesible -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top" aria-label="Menú principal">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
@@ -37,7 +37,7 @@
     </div>
   </nav>
 
-  <!-- Hero Section llamativo -->
+  <!-- Hero Section llamativo y accesible -->
   <header class="hero-section d-flex align-items-center justify-content-center text-white text-center" style="background-image: url('assets/campus1.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
     <div class="container py-5 bg-dark bg-opacity-50 rounded-4 animate-fade-in" aria-label="Presentación del programa">
       <h1 class="display-4 fw-bold mb-3">Descubre el Nuevo Programa en Ciencias Sociales</h1>
@@ -50,14 +50,14 @@
   <div id="mainCarousel" class="carousel slide mt-4 carousel-pequeno" data-bs-ride="carousel" aria-label="Carrusel informativo">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/campus1.jpg" class="d-block w-100" alt="Vista aérea del campus principal" />
+        <img src="assets/campus1.jpg" class="d-block w-100" alt="Vista aérea del campus principal" width="1200" height="400" />
         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
           <h5>Bienvenidos al nuevo programa</h5>
           <p>Formamos líderes comprometidos con la sociedad.</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="assets/aula.jpg" class="d-block w-100" alt="Estudiantes en aula participando activamente" />
+        <img src="assets/aula.jpg" class="d-block w-100" alt="Estudiantes en un aula moderna" width="1200" height="400" loading="lazy" />
         <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
           <h5>Excelencia Académica</h5>
           <p>Docentes expertos y plan de estudios actualizado.</p>
@@ -79,7 +79,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100 shadow-sm animate-fade-in">
-            <img src="assets/innovacion.jpg" class="card-img-top" alt="Icono de innovación social" />
+            <img src="assets/innovacion.jpg" class="card-img-top" alt="Icono de innovación social" width="400" height="250" loading="lazy" />
             <div class="card-body">
               <h2 class="card-title fs-5"><i class="bi bi-lightbulb-fill text-warning me-2" aria-hidden="true"></i>Innovación Social</h2>
               <p class="card-text">Aprende a diseñar soluciones para los retos sociales actuales.</p>
@@ -88,7 +88,7 @@
         </div>
         <div class="col">
           <div class="card h-100 shadow-sm animate-fade-in" style="animation-delay: 0.15s;">
-            <img src="assets/comunidad.jpg" class="card-img-top" alt="Icono de comunidad estudiantil" />
+            <img src="assets/comunidad.jpg" class="card-img-top" alt="Icono de comunidad estudiantil" width="400" height="250" loading="lazy" />
             <div class="card-body">
               <h2 class="card-title fs-5"><i class="bi bi-people-fill text-primary me-2" aria-hidden="true"></i>Comunidad Inclusiva</h2>
               <p class="card-text">Únete a una facultad diversa y comprometida con la equidad.</p>
@@ -97,7 +97,7 @@
         </div>
         <div class="col">
           <div class="card h-100 shadow-sm animate-fade-in" style="animation-delay: 0.3s;">
-            <img src="assets/oportunidades.jpg" class="card-img-top" alt="Icono de oportunidades profesionales" />
+            <img src="assets/oportunidades.jpg" class="card-img-top" alt="Icono de oportunidades profesionales" width="400" height="250" loading="lazy" />
             <div class="card-body">
               <h2 class="card-title fs-5"><i class="bi bi-briefcase-fill text-success me-2" aria-hidden="true"></i>Oportunidades Profesionales</h2>
               <p class="card-text">Accede a prácticas y bolsas de trabajo exclusivas para estudiantes.</p>
@@ -107,7 +107,7 @@
       </div>
     </section>
 
-    <!-- Sección de testimonios -->
+    <!-- Sección de testimonios accesible -->
     <section class="mt-5" aria-labelledby="testimonios">
       <h2 id="testimonios" class="mb-4">Testimonios de Estudiantes</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -126,7 +126,7 @@
       </div>
     </section>
 
-    <!-- Sección de preguntas frecuentes (FAQ) -->
+    <!-- Sección de preguntas frecuentes (FAQ) accesible -->
     <section class="mt-5" aria-labelledby="faq">
       <h2 id="faq" class="mb-4">Preguntas Frecuentes</h2>
       <div class="accordion" id="faqAccordion">
@@ -169,7 +169,7 @@
       </div>
     </section>
 
-    <!-- Formulario de contacto -->
+    <!-- Formulario de contacto accesible y mejorado -->
     <section class="mt-5" aria-labelledby="contacto">
       <h2 id="contacto" class="mb-3">¿Tienes dudas? Contáctanos</h2>
       <form id="contactForm" novalidate aria-describedby="form-desc" class="bg-white p-4 rounded shadow-sm animate-fade-in" style="animation-delay: 0.5s;">
@@ -209,7 +209,7 @@
   </main>
 
   <!-- Pie de página enriquecido y accesible -->
-  <!-- Los iconos se cargan desde Bootstrap Icons. -->
+  <!-- Los iconos se cargan desde Bootstrap Icons. Si no se ven, verifica la conexión a Internet y que el CDN esté accesible. -->
   <footer class="bg-dark text-white text-center py-4 mt-5">
     <div class="container">
       <div class="row align-items-center">
@@ -233,4 +233,18 @@
   <script src="js/scripts.js"></script>
 </body>
 </html>
+
+<!--
+  Decisiones de accesibilidad:
+  - Se usan etiquetas semánticas (nav, main, section, footer) para estructurar el contenido.
+  - El menú tiene aria-label y los botones aria-controls/aria-expanded.
+  - Las imágenes tienen texto alternativo claro.
+  - Buen contraste de colores (navbar, footer, tarjetas).
+  - Formularios con labels asociados, mensajes de error claros y aria-required.
+  - Se usan encabezados jerárquicos (h1, h2, h3).
+  - Acordeón FAQ con roles ARIA y navegación por teclado.
+  - Pie de página con enlaces accesibles y aria-label en iconos sociales.
+  - Tamaño de texto legible y responsivo.
+  - Animaciones no disruptivas para mejorar experiencia visual.
+-->
 
