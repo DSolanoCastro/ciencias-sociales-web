@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisitos de Admisión | Ciencias Sociales</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar sticky y con sombra, accesible -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top" aria-label="Menú principal">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-people-fill" aria-hidden="true"></i>
+        Ciencias Sociales
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="requisitos.html">Requisitos de Admisión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan-estudios.html">Plan de Estudios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section pequeña -->
+  <header class="hero-section-sm d-flex align-items-center justify-content-center text-white text-center" style="background-image: url('assets/aula.jpg'); background-size: cover; background-position: center; min-height: 30vh;">
+    <div class="container py-4 bg-dark bg-opacity-50 rounded-4 animate-fade-in">
+      <h1 class="display-5 fw-bold mb-1">Requisitos de Admisión</h1>
+      <p class="lead">Conoce lo necesario para formar parte de nuestra comunidad.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <section aria-labelledby="requisitos">
+      <h2 id="requisitos" class="mb-4"><i class="bi bi-journal-check text-success me-2" aria-hidden="true"></i>Requisitos</h2>
+      <ul class="list-group list-group-flush mb-4 animate-fade-in">
+        <li class="list-group-item"><i class="bi bi-mortarboard-fill text-primary me-2" aria-hidden="true"></i>Título de bachiller o equivalente.</li>
+        <li class="list-group-item"><i class="bi bi-file-earmark-text-fill text-info me-2" aria-hidden="true"></i>Presentar examen de admisión institucional.</li>
+        <li class="list-group-item"><i class="bi bi-file-earmark-person-fill text-warning me-2" aria-hidden="true"></i>Carta de motivación (mínimo 300 palabras).</li>
+        <li class="list-group-item"><i class="bi bi-people-fill text-secondary me-2" aria-hidden="true"></i>Entrevista personal con el comité académico.</li>
+        <li class="list-group-item"><i class="bi bi-card-heading text-danger me-2" aria-hidden="true"></i>Copia de documentos de identidad.</li>
+      </ul>
+      <div class="alert alert-info animate-fade-in" role="alert">
+        <strong><i class="bi bi-info-circle-fill me-1" aria-hidden="true"></i>Nota:</strong> Para estudiantes internacionales se requieren documentos adicionales. Consulta en el formulario de contacto.
+      </div>
+    </section>
+    <a href="index.html" class="btn btn-outline-primary mt-3 animate-btn-focus"><i class="bi bi-arrow-left-circle me-2" aria-hidden="true"></i>Volver al inicio</a>
+  </main>
+
+  <!-- Pie de página enriquecido y accesible -->
+  <!-- Los iconos se cargan desde Bootstrap Icons. Si no se ven, verifica la conexión a Internet y que el CDN esté accesible. -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 mb-2 mb-md-0">
+          <small>&copy; 2025 Facultad de Ciencias Sociales</small>
+        </div>
+        <div class="col-md-4 mb-2 mb-md-0">
+          <a href="mailto:info@facultad-cs.edu" class="text-white text-decoration-none me-3"><i class="bi bi-envelope-fill" aria-hidden="true"></i> info@facultad-cs.edu</a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="text-white text-decoration-none me-2" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="text-white text-decoration-none me-2" aria-label="Twitter"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          <a href="#" class="text-white text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!--
+  Decisiones de accesibilidad:
+  - Estructura semántica (header, main, section, nav, footer).
+  - Listas con ul/li e iconos para reforzar visualmente.
+  - Mensaje de alerta con role="alert" e icono informativo.
+  - Buen contraste de colores y texto legible.
+  - Navegación clara y feedback visual en botones.
+  - Pie de página con enlaces accesibles y aria-label en iconos sociales.
+  - Animaciones no disruptivas para mejorar experiencia visual.
+-->
+

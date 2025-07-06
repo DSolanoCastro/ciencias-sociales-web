@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan de Estudios | Ciencias Sociales</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar sticky y con sombra, accesible -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top" aria-label="Menú principal">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-people-fill" aria-hidden="true"></i>
+        Ciencias Sociales
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="requisitos.html">Requisitos de Admisión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="plan-estudios.html">Plan de Estudios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section pequeña -->
+  <header class="hero-section-sm d-flex align-items-center justify-content-center text-white text-center" style="background-image: url('assets/innovacion.jpg'); background-size: cover; background-position: center; min-height: 30vh;">
+    <div class="container py-4 bg-dark bg-opacity-50 rounded-4 animate-fade-in">
+      <h1 class="display-5 fw-bold mb-1">Plan de Estudios</h1>
+      <p class="lead">Conoce la estructura y asignaturas del programa académico.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    <section aria-labelledby="plan">
+      <h2 id="plan" class="mb-4"><i class="bi bi-table text-primary me-2" aria-hidden="true"></i>Plan de Estudios</h2>
+      <p class="mb-4">
+        El plan de estudios está diseñado para brindar una formación integral a lo largo de tres años. Incluye asignaturas principales que desarrollan competencias clave en Ciencias Sociales, y optativas que permiten al estudiante enfocar su perfil profesional según sus intereses. Las materias están organizadas de forma progresiva para facilitar el aprendizaje y la aplicación práctica del conocimiento.
+      </p>
+      <div class="table-responsive animate-fade-in">
+        <table class="table table-bordered table-striped align-middle" aria-describedby="tabla-plan">
+          <caption id="tabla-plan">Plan de estudios del nuevo programa académico</caption>
+          <thead class="table-primary">
+            <tr>
+              <th scope="col"><i class="bi bi-calendar3 text-secondary me-1" aria-hidden="true"></i>Año</th>
+              <th scope="col"><i class="bi bi-book-fill text-success me-1" aria-hidden="true"></i>Asignaturas Principales</th>
+              <th scope="col"><i class="bi bi-bookmark-star-fill text-warning me-1" aria-hidden="true"></i>Asignaturas Optativas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1°</th>
+              <td>Introducción a las Ciencias Sociales, Metodología de la Investigación, Historia Social</td>
+              <td>Comunicación Oral, TIC para las Ciencias Sociales</td>
+            </tr>
+            <tr>
+              <th scope="row">2°</th>
+              <td>Teoría Social Contemporánea, Estadística Aplicada, Ética y Sociedad</td>
+              <td>Antropología Urbana, Psicología Social</td>
+            </tr>
+            <tr>
+              <th scope="row">3°</th>
+              <td>Políticas Públicas, Seminario de Investigación, Prácticas Profesionales</td>
+              <td>Desarrollo Comunitario, Género y Sociedad</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <a href="index.html" class="btn btn-outline-primary mt-3 animate-btn-focus"><i class="bi bi-arrow-left-circle me-2" aria-hidden="true"></i>Volver al inicio</a>
+    </section>
+  </main>
+
+  <!-- Pie de página enriquecido y accesible -->
+  <!-- Los iconos se cargan desde Bootstrap Icons. Si no se ven, verifica la conexión a Internet y que el CDN esté accesible. -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 mb-2 mb-md-0">
+          <small>&copy; 2025 Facultad de Ciencias Sociales</small>
+        </div>
+        <div class="col-md-4 mb-2 mb-md-0">
+          <a href="mailto:info@facultad-cs.edu" class="text-white text-decoration-none me-3"><i class="bi bi-envelope-fill" aria-hidden="true"></i> info@facultad-cs.edu</a>
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="text-white text-decoration-none me-2" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="text-white text-decoration-none me-2" aria-label="Twitter"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          <a href="#" class="text-white text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!--
+  Decisiones de accesibilidad:
+  - Uso de tabla con caption, scope en encabezados e iconos para refuerzo visual.
+  - Estructura semántica (header, main, section, nav, footer).
+  - Buen contraste y tamaño de texto.
+  - Navegación clara y feedback visual en botones.
+  - Pie de página con enlaces accesibles y aria-label en iconos sociales.
+  - Animaciones no disruptivas para mejorar experiencia visual.
+-->
+

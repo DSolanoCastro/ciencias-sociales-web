@@ -1,0 +1,77 @@
+/* styles.css - Personalizaciones para accesibilidad y mobile first */
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.card-title {
+  font-size: 1.15rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+footer {
+  font-size: 0.95rem;
+}
+
+/* Mejor contraste para el navbar y footer */
+.navbar, footer {
+  background-color: #003366 !important;
+}
+
+/* Botones con feedback visual */
+.btn-primary, .btn-outline-primary {
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-primary:focus, .btn-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:hover {
+  background-color: #0056b3 !important;
+  color: #fff !important;
+}
+
+/* Carrusel: mejora de contraste en caption */
+.carousel-caption {
+  color: #fff;
+  text-shadow: 1px 1px 6px #000;
+}
+
+/* Mobile first: tarjetas en columna */
+@media (max-width: 767px) {
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Accesibilidad: focus visible */
+:focus-visible {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+/* Animaciones personalizadas */
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-btn-focus:focus, .animate-btn-focus:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 0 0.2rem #ffcc00aa;
+}
