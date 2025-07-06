@@ -69,9 +69,10 @@ footer {
 }
 
 /* Mejorar contraste de texto en carrusel */
-.carousel-caption h5 {
-  color: #212529;
-  text-shadow: none;
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
 }
 
 /* Texto blanco para nombres de alumnos en testimonios */
