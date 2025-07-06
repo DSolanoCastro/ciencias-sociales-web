@@ -24,7 +24,7 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Mejor contraste para el navbar y footer */
+
 .navbar, footer {
   background-color: #003366 !important;
 }
@@ -64,7 +64,7 @@ footer {
 
 /* Reducir altura del carrusel */
 .carousel-pequeno .carousel-item img {
-  max-height: 240px;
+  max-height: 300px;
   object-fit: cover;
 }
 

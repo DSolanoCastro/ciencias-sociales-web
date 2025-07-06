@@ -1,4 +1,4 @@
-// scripts.js - Validación básica del formulario de contacto con mensajes claros y accesibles
+// scripts.js - Validación básica del formulario de contacto
 
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contactForm');
@@ -45,7 +45,3 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Decisiones de accesibilidad:
-// - Mensajes de error claros y visibles (Bootstrap .invalid-feedback)
-// - Se previene el envío si hay errores, evitando confusión
-// - Se usa outline visible para navegación por teclado
