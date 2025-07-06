@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Navbar sticky y con sombra, accesible -->
+  <!-- Navbar sticky y con sombra -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top" aria-label="Menú principal">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
@@ -37,7 +37,7 @@
     </div>
   </nav>
 
-  <!-- Hero Section llamativo y accesible -->
+  <!-- Hero Section llamativo -->
   <header class="hero-section d-flex align-items-center justify-content-center text-white text-center" style="background-image: url('assets/campus1.jpg'); background-size: cover; background-position: center; min-height: 60vh;">
     <div class="container py-5 bg-dark bg-opacity-50 rounded-4 animate-fade-in" aria-label="Presentación del programa">
       <h1 class="display-4 fw-bold mb-3">Descubre el Nuevo Programa en Ciencias Sociales</h1>
@@ -107,7 +107,7 @@
       </div>
     </section>
 
-    <!-- Sección de testimonios accesible -->
+    <!-- Sección de testimonios -->
     <section class="mt-5" aria-labelledby="testimonios">
       <h2 id="testimonios" class="mb-4">Testimonios de Estudiantes</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -126,7 +126,7 @@
       </div>
     </section>
 
-    <!-- Sección de preguntas frecuentes (FAQ) accesible -->
+    <!-- Sección de preguntas frecuentes (FAQ) -->
     <section class="mt-5" aria-labelledby="faq">
       <h2 id="faq" class="mb-4">Preguntas Frecuentes</h2>
       <div class="accordion" id="faqAccordion">
@@ -169,7 +169,7 @@
       </div>
     </section>
 
-    <!-- Formulario de contacto accesible y mejorado -->
+    <!-- Formulario de contacto -->
     <section class="mt-5" aria-labelledby="contacto">
       <h2 id="contacto" class="mb-3">¿Tienes dudas? Contáctanos</h2>
       <form id="contactForm" novalidate aria-describedby="form-desc" class="bg-white p-4 rounded shadow-sm animate-fade-in" style="animation-delay: 0.5s;">
@@ -233,18 +233,4 @@
   <script src="js/scripts.js"></script>
 </body>
 </html>
-
-<!--
-  Decisiones de accesibilidad:
-  - Se usan etiquetas semánticas (nav, main, section, footer) para estructurar el contenido.
-  - El menú tiene aria-label y los botones aria-controls/aria-expanded.
-  - Las imágenes tienen texto alternativo claro.
-  - Buen contraste de colores (navbar, footer, tarjetas).
-  - Formularios con labels asociados, mensajes de error claros y aria-required.
-  - Se usan encabezados jerárquicos (h1, h2, h3).
-  - Acordeón FAQ con roles ARIA y navegación por teclado.
-  - Pie de página con enlaces accesibles y aria-label en iconos sociales.
-  - Tamaño de texto legible y responsivo.
-  - Animaciones no disruptivas para mejorar experiencia visual.
--->
 
